@@ -1,0 +1,10 @@
+#include <set>
+
+class Solution {
+public:
+    bool hasDuplicate(vector<int>& nums) {
+        std::set<int> s(nums.begin(), nums.end());
+
+        return nums.size() != s.size();
+    }
+};
